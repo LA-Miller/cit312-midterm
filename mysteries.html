@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancient Architecture and Mysteries</title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,10 +20,143 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="wonders.html">Ancient Wonders</a></li>
-                <li><a href="mysteries.html">Ancient Mysteries</a></li>
+                <li><a href="mysteries.html" class="active">Ancient Mysteries</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Ancient Mysteries</h1>
+            <p>
+                Explore some of history’s most fascinating archaeological mysteries and the theories that still surround
+                them today.
+            </p>
+        </section>
+
+        <section class="mysteries-container">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/nazca-lines.jpg" alt="Nazca Lines">
+                        <h3>Nazca Lines</h3>
+                    </div>
+
+                    <div class="flip-card-back">
+                        <h3>Nazca Lines</h3>
+                        <p>Huge geoglyphs in Peru created in ancient times, some can be seen from space.</p>
+                        <p>Their exact purpose is still debated.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/moai.jpg" alt="Easter Island Moai">
+                        <h3>Easter Island Moai</h3>
+                    </div>
+
+                    <div class="flip-card-back">
+                        <h3>Easter Island Moai</h3>
+                        <p>Massive stone statues created by the Rapa Nui people.</p>
+                        <p>How they were moved remains a mystery.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/gobekli-tepe.jpg" alt="Gobekli Tepe">
+                        <h3>Gobekli Tepe</h3>
+                    </div>
+
+                    <div class="flip-card-back">
+                        <h3>Gobekli Tepe</h3>
+                        <p>An ancient site in Turkey older than the pyramids by 6,000 - 7,500 years.</p>
+                        <p>Its purpose is still uncertain. Only 5-10% of the site has been excavated.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/antikythera.jpg" alt="Antikythera Mechanism">
+                        <h3>Antikythera Mechanism</h3>
+                    </div>
+
+                    <div class="flip-card-back">
+                        <h3>Antikythera Mechanism</h3>
+                        <p>An ancient Greek device used to track astronomical events.</p>
+                        <p>It is often called the world’s first analog computer.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="mystery-form-section">
+            <h2>Mystery Voting Form</h2>
+            <p>Which mystery interests you the most?</p>
+
+            <form class="mystery-form" action="#" method="get">
+                <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username">
+                </div>
+
+                <fieldset>
+                    <legend>Choose a mystery</legend>
+
+                    <label>
+                        <input type="radio" name="mystery" value="nazca-lines">
+                        Nazca Lines
+                    </label>
+
+                    <label>
+                        <input type="radio" name="mystery" value="moai">
+                        Easter Island Moai
+                    </label>
+
+                    <label>
+                        <input type="radio" name="mystery" value="gobekli-tepe">
+                        Gobekli Tepe
+                    </label>
+
+                    <label>
+                        <input type="radio" name="mystery" value="antikythera">
+                        Antikythera Mechanism
+                    </label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p class="footer-title">Ancient Architecture & Mysteries</p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="wonders.html">Ancient Wonders</a>
+                <a href="mysteries.html">Ancient Mysteries</a>
+            </div>
+
+            <p class="footer-copy">&copy; 2026 Luke Miller</p>
+        </div>
+    </footer>
+
+
 
 </body>
 

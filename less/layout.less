@@ -19,6 +19,7 @@ main {
   max-height: 450px;
   object-fit: cover;
   display: block;
+  border-bottom: 3px solid @dark-color;
 }
 
 .hero-text {
@@ -85,4 +86,74 @@ main {
 .page-header p {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.mystery-form-section {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: @light-color;
+  border: 2px solid @dark-color;
+  border-radius: @radius;
+}
+
+.mystery-form-section h2,
+.mystery-form-section p {
+  text-align: center;
+}
+
+.mystery-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mystery-form label {
+  font-weight: bold;
+}
+
+.mystery-form input[type="text"],
+.mystery-form textarea {
+  padding: 10px;
+  border: 2px solid @dark-color;
+  border-radius: @radius;
+  font-family: @font-stack;
+}
+
+.mystery-form fieldset {
+  border: 2px solid @dark-color;
+  border-radius: @radius;
+  padding: 15px;
+}
+
+.mystery-form legend {
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.mystery-form fieldset label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.mystery-form button {
+  background-color: @primary-color;
+  color: @light-color;
+  border: none;
+  border-radius: @radius;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mystery-form button:hover {
+  background-color: @dark-color;
 }
