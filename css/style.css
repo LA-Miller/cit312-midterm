@@ -259,9 +259,13 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5e6c8;
   color: #3e2f1c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 main {
   padding: 0;
+  flex: 1;
 }
 .hero {
   text-align: center;
